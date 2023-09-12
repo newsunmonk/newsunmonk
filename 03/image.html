@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoasobi</title>
+</head>
+<body>
+  <div id="container">
+    <h1>회원 가입을 환영합니다</h1>
+    <form>
+      <fieldset>
+        <legend>사용자 정보</legend>
+          <ul>
+            <li>
+              <label for="uid">아이디</label>
+              <input type="text" id="uid" value="고경희" readonly>
+            </li>
+            <li>
+              <label for="umail">이메일</label>
+              <input type="email" id="umail" autofocus required>
+            </li>
+            <li>
+              <label for="pwd1">비밀번호</label>
+              <input type="password" id="pwd1" placeholder="비밀번호를 입력해 주세요.">
+            </li>
+            <li>
+              <label for="pwd2">비밀번호 확인</label>
+              <input type="password" id="pwd2" size="100" placeholder="비밀번호를 한 번 더 입력해 주세요.">
+            </li>
+          </ul>
+      </fieldset>
+      <fieldset>
+        <legend>이벤트와 새로운 소식</legend>
+        <input type="radio" name="mailing" id="mailing_y">
+        <label for="mailing_y">메일 수신</label>
+        <input type="radio" name="mailing" id="mailing_n" checked>
+        <label for="mailing_n">메일 수신 안함</label>
+      </fieldset>
+      <div id="buttons">
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+      </div>
+    </form>
+  </div>
+  <div id="check-item">
+    <ul>
+      <li>
+        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+        <input type="number" min="3" max="5" value="3">개(최대 5개)
+      </li>
+      <li>
+        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+        <input type="range" min="3" max="10" value="7">개 (최대 10개)
+      </li>
+    </ul>
+  </div>
+  <form>
+    <input type="button" value="공지 창 열기" onclick="window.open('notice.html')">
+    <fieldset>
+      <label for="memo">메모</label><br>
+      <textarea id="memo" cols="40" rows="4"></textarea><br>
+      <label for="prod1">상품 선택</label>
+      <select id="prod1">
+        <option value="yamaha r1" selected>yamaha r1</option>
+        <option value="yamaha r7">yamaha r7</option>
+        <option value="yamaha r3">yamaha r3</option>
+        <option value="yamaha r125">yamaha r125</option>
+        <option value="yamaha mt-10">yamaha mt-10</option>
+        <option value="yamaha mt-09">yamaha mt-09</option>
+        <option value="yamaha mt-07">yamaha mt-07</option>
+      </select>
+      <button type="submit">전송하기</button>
+    </fieldset>
+  </form>
+</body>
+</html>
